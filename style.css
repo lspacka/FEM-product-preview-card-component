@@ -28,19 +28,15 @@
 
 body {
   background: hsl(30, 38%, 92%);
-  padding: 20px 20px 30px 20px;
+  padding: 30px 30px 30px 20px;
   font-family: 'Montserrat';
   font-style: normal;
-  overflow-y: hidden;
-  /* display: grid; */
-  /* place-content: center; */
+  max-height: 100vh;
+  /* overflow: hidden; */
 }
 
 .card {
   display: grid;
-  /* grid-template-rows: 1fr 1fr; */
-  grid-template-columns: 1;
-  gap: 0;
   width: fit-content;
   background: hsl(0, 0%, 100%);
   border-radius: 0.5em;
@@ -109,14 +105,29 @@ button:hover {
 }
 
 @media (min-width: 600px) {
+  body {
+    padding: 0;
+    min-height: 100vh;
+  }
+  /* main {
+    max-height: 70vh;
+  } */
   .card {
     margin: 0 auto;
-  }
-  .card {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr; */
+    width: 70%;
+    height: 99.4vh;
   }
+  /* .img-container {
+    height: 80vh;
+    border-radius: 0.5em 0 0 0.5em;
+  } */
   .perfume-img {
-    border-radius: 0.5em 0 0 0.5em
+    border-radius: 0.5em 0 0 0.5em;
+    width: 100%;
+    max-height: 99.4vh;
+    /* height: 100%; */
   }
 }
