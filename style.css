@@ -28,11 +28,9 @@
 
 body {
   background: hsl(30, 38%, 92%);
-  padding: 30px 30px 30px 20px;
   font-family: 'Montserrat';
   font-style: normal;
   max-height: 100vh;
-  /* overflow: hidden; */
 }
 
 .card {
@@ -49,18 +47,23 @@ body {
   height: 100%;
 }
 
-.prod-desc {
+.product {
   padding: 25px;
-  font-size: 0.8rem;
   color: hsl(228, 12%, 48%);
   line-break: auto;
 }
 
 h1 {
-  margin: 15px 0 10px 0;
+  margin: 10px 0 10px 0;
   font-family: 'Fraunces';
   line-height: 1;
   color: hsl(212, 21%, 14%);
+  font-size: 2rem;
+}
+
+.perfume-desc {
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 .price {
@@ -69,12 +72,13 @@ h1 {
 
 span:nth-of-type(1) {
   font-family: 'Fraunces';
-  font-size: 2rem;
+  font-size: 1.9rem;
   color: hsl(158, 31%, 47%);
 }
 
 span:nth-of-type(2) {
-  align-content: center;
+  position: relative;
+  top: -6px;
 }
 
 span {
@@ -82,7 +86,7 @@ span {
 }
 
 #cart {
-  margin-right: 15px;
+  margin-right: 10px;
   width: 0.9rem;
   height: 0.9rem;
 }
@@ -95,8 +99,9 @@ button {
   border: none;
   color: white;
   align-items: center;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-family: 'Montserrat';
+  font-weight: bold;
   cursor: pointer;
 }
 
@@ -109,25 +114,42 @@ button:hover {
     padding: 0;
     min-height: 100vh;
   }
-  /* main {
-    max-height: 70vh;
-  } */
   .card {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* grid-template-rows: 1fr; */
-    width: 70%;
+    width: 60%;
     height: 99.4vh;
+    border-radius: 0.8em;
   }
-  /* .img-container {
-    height: 80vh;
-    border-radius: 0.5em 0 0 0.5em;
-  } */
   .perfume-img {
-    border-radius: 0.5em 0 0 0.5em;
+    border-radius: 0.8em 0 0 0.8em;
     width: 100%;
     max-height: 99.4vh;
-    /* height: 100%; */
+  }
+  .product {
+    padding: 45px;
+    padding-bottom: 5px;
+    font-size: 1.1rem;
+    word-wrap: break-word;
+  }
+  h1 {
+    margin: 30px 0 40px 0;
+    font-size: 2.4em;
+  }
+  .perfume-desc {
+    line-height: 1.7;
+    padding: 0 10px 0 0;
+    font-size: 1.1099rem;
+  }
+  .price {
+    margin: 40px 0 40px 0;
+  }
+  span:nth-of-type(1) {
+    font-size: 2.4rem;
+  }
+  button {
+    height: 65px;
   }
 }
